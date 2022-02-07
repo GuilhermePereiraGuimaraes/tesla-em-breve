@@ -1,0 +1,103 @@
+@charset "UTF=8";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap');
+@font-face {
+    font-family: 'Tesla';
+    src: url(TESLA.ttf) format('truetype');
+    font-weight: normal;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(wallpaper-tesla.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+main{
+    position: relative;
+    width: 45vw;
+    height: 100vh;
+    background-color: #3a3a3a;
+    color: white;
+    box-shadow: 5px 5px 5px #0000009a;
+}
+main>header{
+    padding: 10px;
+    text-align: center;
+}
+img#img-titulo{
+    margin-top: 10px;
+    max-width: 150px;
+    max-height: 150px;
+}
+main>section{
+    margin-top: 10px;
+    width: 90%;
+    position: absolute;
+    padding: 10px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%,-50%);
+}
+main h2{
+    font-family: 'Tesla',sans-serif;
+    text-transform: uppercase;
+    color: #FF1B22;
+    font-weight: normal;
+}
+main p{
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+main>section h2,p,input{
+    font-size: 2.5vw;
+    padding: 10px;
+}
+form{
+    display: inline-block;
+    padding: 10px;
+    border: 2px dotted #252525;
+    background-color: #232322;
+    box-shadow: 4px 4px 5px #00000069;
+    border-radius: 10px;
+    margin-left: -5px;
+    min-width: 186px;
+    max-width: 500px;
+}
+
+input#email{
+    width: 27vw;
+    height: 8vh;
+    padding: 0.7vw;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    border-radius: 10px 0px 0px 10px;
+}
+input#email::placeholder{
+    font-style: italic;
+    font-size: 2vw;
+}
+input#botao{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5vw;
+
+    background-color: #AD183D;
+    width: 7vw;
+    height: 10vh;
+    padding: 1.2vw;
+    border-radius: 0px 10px 10px 0px;
+}
+#botao:hover{
+    background-color: #cf1f4b;
+}
+#botao:active{
+    background-color: #7c112c;
+    color: #b4b4b4;
+}
